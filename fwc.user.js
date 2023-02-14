@@ -5,8 +5,8 @@
 // @description  Нахуй Крыла, скрипт будет обновляться
 // @author       Johann Mosin
 // @match        https://edu.vsu.ru/mod/attendance/view.php?id=1098103*
-// @grant        GM_setValue
-// @grant        GM_getValue
+// @grant        none
+// @license      MIT
 // ==/UserScript==
 
 (function() {
@@ -17,7 +17,7 @@
         if (document.body.textContent.includes('Отметить')) {
             // If the text is found, send an alert to the browser
             window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-            alert('Крыл охуел и решил проверить посещяемость!');
+            alert('Крыл охуел и решил проверить посещаемость!');
             clearInterval(intervalId);
         } else {
             // If the text is not found, reload the page
